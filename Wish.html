@@ -76,7 +76,27 @@
             <div class="row">
               <!-- Whish -->
     <!-- Define a video with sources to attach Fluid Player to -->   
-    <iframe src="https://drive.google.com/file/d/1_VjN3D-zz-hlXi8kcM2OO-CRzARKt173/preview" width="640" height="480" allow="autoplay" allowfullscreen> </iframe>
+    <video id='my-video' controls style="width: 640px; height: 360px;">
+      <source src="https://www.googleapis.com/drive/v3/files/1_VjN3D-zz-hlXi8kcM2OO-CRzARKt173?alt=media&key=AIzaSyCHxjZw_2-1zF6R4IL2SWnCGqQqWhdPqZ4" type="video/mp4"/>
+  </video>
+  <!-- Place before </body> tag -->
+  <script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js"></script>
+  <script>
+      // fluidPlayer method is global when CDN distribution is used.
+          var player = fluidPlayer('example-player');
+          </script>
+            </div>
+          </div>
+          <div>
+            
+          </div>
+        </div>
+        <!--<div class="col-md-4">
+          <img src="Wish.jpg" alt="" class="w-100">
+        </div>-->
+      </div>
+    </div>
+  </section>
   <!-- end service section -->
   <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="bootstrap.js"></script>
